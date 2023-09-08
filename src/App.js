@@ -1,6 +1,3 @@
-//import logo from './logo.svg';
-//import './App.css';
-
 function App() {
   return (
     <div className="App" class="min-h-screen bg-blue-100">
