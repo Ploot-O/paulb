@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.expanding-div {
+  width: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

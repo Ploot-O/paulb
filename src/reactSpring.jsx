@@ -1,25 +1,52 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-const ExpandingDiv = () => {
-  const [isHovered, setIsHovered] = useState(false);
+const HoverGrowText = ({ color, children }) => {
+  const [hovered, setHovered] = React.useState(false);
 
-  // Define the styles for the animated div
-  const divAnimation = useSpring({
-    height: isHovered ? '125%' : '100%', // 125% for expansion
+  const springProps = useSpring({
+    "font-size": hovered? '120%' : '100%',
+    //transform: hovered ? 'scale(1.1)' : 'scale(1)',
+    color: hovered? color : '#1e40af',
   });
 
   return (
-    <div
-      className="expanding-div"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <animated.div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        ...springProps,
+        display: 'inline-block',
+        transition: 'transform 0.5s ease',
+      }}
     >
-      <animated.div className="content" style={divAnimation}>
-        Hover me!
-      </animated.div>
-    </div>
+      {children}
+    </animated.div>
   );
 };
 
-export default ExpandingDiv;
+const HoverGrowDiv = ({ children }) => {
+  const [hovered, setHovered] = React.useState(false);
+
+  const springProps = useSpring({
+    transform: hovered ? 'scale(1, 1.20)' : 'scale(1, 1)',
+  });
+
+  return (
+    <animated.div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        ...springProps,
+        transition: 'transform 0.5s ease',
+      }}
+    >
+      {children}
+    </animated.div>
+  );
+};
+
+export {
+  HoverGrowText,
+  HoverGrowDiv,
+}
