@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App min-h-screen bg-blue-800 text-blue-800 text-xl font-thin">
-      <div className="text-center bg-blue-50 p-4 mb-4">
+      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
         <div className="text-center mb-4">
           <span id="intro" className="text-4xl font-extrabold text-blue-800 font-mono">About Me</span>
         </div>
@@ -13,7 +13,6 @@ function App() {
           <span>Hi, my name is </span>
           <span className="font-mono"><HoverGrowText color="#057dfc">Paul Broccardi</HoverGrowText></span>
           <span>.</span>
-          <HoverGrowText color=""></HoverGrowText>
         </div>
         <div>
           <span>I am a <span className="font-mono"><HoverGrowText color="#05fc85">Network Specialist</HoverGrowText></span> and <span className="font-mono"><HoverGrowText color="#000000">Astrophotographer</HoverGrowText></span>.</span>
@@ -47,17 +46,12 @@ function App() {
             <HoverGrowText color="#a81cb8">Instagram</HoverGrowText>
           </a>
         </header>
-      </div>
-      <div className="text-center bg-blue-50 p-4 mb-4">
+      </HoverGrowDiv>
+      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
         <div className="text-center mb-4">
           <span id="projects" className="text-4xl font-extrabold font-mono">Projects</span>
         </div>
-        <HoverGrowDiv>
-          <span>
-            TEST
-          </span>
-        </HoverGrowDiv>
-      </div>
+      </HoverGrowDiv>
     </div>
   );
 }
