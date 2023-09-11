@@ -5,7 +5,7 @@ const HoverGrowText = ({ color, children }) => {
   const [hovered, setHovered] = React.useState(false);
 
   const springProps = useSpring({
-    "font-size": hovered? '110%' : '100%',
+    "fontSize": hovered? '110%' : '100%',
     color: hovered? color : '#1e40af',
   });
 
@@ -28,7 +28,8 @@ const HoverGrowDiv = ({ children, className, style }) => {
   const [hovered, setHovered] = React.useState(false);
 
   const springProps = useSpring({
-    height: hovered ? '30vh' : '25vh'
+    'paddingTop': hovered ? '5vh' : '4vh',
+    'paddingBottom': hovered ? '5vh' : '4vh',
   });
 
   return (

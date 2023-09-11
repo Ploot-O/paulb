@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App min-h-screen bg-blue-800 text-blue-800 text-xl font-thin">
-      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
+      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4 items-center">
         <div className="text-center mb-4">
           <span id="intro" className="text-4xl font-extrabold text-blue-800 font-mono">About Me</span>
         </div>
