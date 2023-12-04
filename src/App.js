@@ -51,6 +51,28 @@ function App() {
         <div className="text-center mb-4">
           <span id="projects" className="text-4xl font-extrabold font-mono">Projects</span>
         </div>
+        <HoverGrowDiv>
+          <a
+            className="App-link m-5"
+            href="https://genarrate.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <HoverGrowText color="#a81cb8"><p className='font-bold'>genarrate.net</p></HoverGrowText>
+          </a>
+          <div className="m-5">AI powered web app that helps medical professionals write narratives for their reports</div>
+        </HoverGrowDiv>
+        <HoverGrowDiv>
+          <a
+            className="App-link m-5"
+            href="https://retireonti.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <HoverGrowText color="#a81cb8"><p className='font-bold'>retireonti.me</p></HoverGrowText>
+          </a>
+          <div className="m-5">Simple web app that lets you know if you're on track to retire based on contributions to retirement accounts</div>
+        </HoverGrowDiv>
       </HoverGrowDiv>
     </div>
   );
