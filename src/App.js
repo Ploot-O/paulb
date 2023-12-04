@@ -84,7 +84,9 @@ function App() {
         <div className="m-5 font-light text-base italic">click the address to copy!</div>
         <HoverGrowText color="#a81cb8">
           <CopyToClipboardText>
-            0xacBfD0DC48D3392cD2680a253521f77E2b280F87
+            <div className="m-5 font-mono text-xs font-bold">
+              0xacBfD0DC48D3392cD2680a253521f77E2b280F87
+            </div>
           </CopyToClipboardText>
         </HoverGrowText>
       </HoverGrowDiv>
