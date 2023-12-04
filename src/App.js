@@ -1,6 +1,7 @@
 import React from 'react';
-import {HoverGrowText, HoverGrowDiv} from './reactSpring.jsx';
+import { HoverGrowText, HoverGrowDiv } from './reactSpring.jsx';
 import './App.css';
+import CopyToClipboardText from './copytext.jsx';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <span>.</span>
         </div>
         <div>
-          <span>I am a <span className="font-mono"><HoverGrowText color="#05fc85">Network Specialist</HoverGrowText></span> and <span className="font-mono"><HoverGrowText color="#000000">Astrophotographer</HoverGrowText></span>.</span>
+          <span>I am a <span className="font-mono"><HoverGrowText color="#05fc85">Cisco Certified Network Associate (CCNA)</HoverGrowText></span> and <span className="font-mono"><HoverGrowText color="#000000">Astrophotographer</HoverGrowText></span>.</span>
         </div>
         <div>
           <span>I am <span className="font-extrabold"><HoverGrowText color="#ff0000">not</HoverGrowText></span> a web designer.</span>
@@ -58,7 +59,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8"><p className='font-bold'>genarrate.net</p></HoverGrowText>
+            <HoverGrowText color="#a81cb8"><p className='font-bold text-3xl'>genarrate.net</p></HoverGrowText>
           </a>
           <div className="m-5">AI powered web app that helps medical professionals write narratives for their reports</div>
         </HoverGrowDiv>
@@ -69,10 +70,23 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8"><p className='font-bold'>retireonti.me</p></HoverGrowText>
+            <HoverGrowText color="#a81cb8"><p className='font-bold text-3xl'>retireonti.me</p></HoverGrowText>
           </a>
           <div className="m-5">Simple web app that lets you know if you're on track to retire based on contributions to retirement accounts</div>
         </HoverGrowDiv>
+      </HoverGrowDiv>
+
+      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
+        <div className="text-center mb-4">
+          <span id="contact" className="text-4xl font-extrabold font-mono">Support</span>
+        </div>
+        <div className="m-5">If for whatever reason you would like to support me financially, here is my etheruem wallet address.</div>
+        <div className="m-5 font-light text-base italic">click the address to copy!</div>
+        <HoverGrowText color="#a81cb8">
+          <CopyToClipboardText>
+            0xacBfD0DC48D3392cD2680a253521f77E2b280F87
+          </CopyToClipboardText>
+        </HoverGrowText>
       </HoverGrowDiv>
     </div>
   );

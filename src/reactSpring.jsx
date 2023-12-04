@@ -28,8 +28,8 @@ const HoverGrowDiv = ({ children, className, style }) => {
   const [hovered, setHovered] = React.useState(false);
 
   const springProps = useSpring({
-    'paddingTop': hovered ? '5vh' : '4vh',
-    'paddingBottom': hovered ? '5vh' : '4vh',
+    'paddingTop': hovered ? '4vh' : '2vh',
+    'paddingBottom': hovered ? '4vh' : '2vh',
   });
 
   return (
