@@ -2,6 +2,9 @@
   text-align: center;
   scrollbar-width: none;
   overflow: hidden;
+  user-select: none;
+  font-family: 'Victor Mono';
+  font-weight: 300;
 }
 
 ::-webkit-scrollbar {
@@ -9,7 +12,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #FF00FF;
 }
 
 .expanding-div {
@@ -19,6 +22,18 @@
   transition: background-color 0.3s;
 }
 
-.App :not(.selectable) {
-  user-select: none;
+/* CSS rule that applies to text that I want the user to be able to select. This will be identified by the class "selectable" */
+.selectable {
+  user-select: all;
+}
+
+/* CSS rule that applies to a class called "retro" that makes anything with that class styled like windows 95 including retro styled font */
+.retro {
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 15px;
+  margin: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }

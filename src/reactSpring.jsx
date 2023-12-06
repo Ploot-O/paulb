@@ -6,7 +6,7 @@ const HoverGrowText = ({ color, children }) => {
 
   const springProps = useSpring({
     "fontSize": hovered? '110%' : '100%',
-    color: hovered? color : '#1e40af',
+    color: hovered? color : '#008080',
   });
 
   return (

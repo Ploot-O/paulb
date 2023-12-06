@@ -1,34 +1,33 @@
 import React from 'react';
 import { HoverGrowText, HoverGrowDiv } from './reactSpring.jsx';
 import './App.css';
-import CopyToClipboardText from './copytext.jsx';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-blue-800 text-blue-800 text-xl font-thin">
-      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4 items-center">
+    <div className="App min-h-screen bg-blue text-slate-900 text-xl font-thin">
+      <HoverGrowDiv className="text-center bg-white p-4 mb-4 items-center">
         <div className="text-center mb-4">
-          <span id="intro" className="text-4xl font-extrabold text-blue-800 font-mono">About Me</span>
+          <span id="intro" className="text-5xl font-extrabold text-slate-900 italic">About Me</span>
         </div>
         <div>
           <span>Hi, my name is </span>
-          <span className="font-mono"><HoverGrowText color="#057dfc">Paul Broccardi</HoverGrowText></span>
+          <span className="font-extrabold italic"><HoverGrowText color="#00FFFF">Paul Broccardi</HoverGrowText></span>
           <span>.</span>
         </div>
         <div>
-          <span>I am a <span className="font-mono"><HoverGrowText color="#05fc85">Cisco Certified Network Associate (CCNA)</HoverGrowText></span> and <span className="font-mono"><HoverGrowText color="#000000">Astrophotographer</HoverGrowText></span>.</span>
+          <span>I am a <span className="font-extrabold italic"><HoverGrowText color="#FFFF00">Cisco Certified Network Associate (CCNA)</HoverGrowText></span> and <span className="font-extrabold italic"><HoverGrowText color="#000000">Astrophotographer</HoverGrowText></span>.</span>
         </div>
         <div>
-          <span>I am <span className="font-extrabold"><HoverGrowText color="#ff0000">not</HoverGrowText></span> a web designer.</span>
+          <span>I am <span className="font-extrabold italic"><HoverGrowText color="#FF0000">not</HoverGrowText></span> a web designer.</span>
         </div>
-        <header className="text-lg text-center font-mono p-4">
+        <header className="text-lg text-center font-extrabold italic p-4">
           <a
             className="App-link m-5"
             href="https://linkedin.com/in/paulbroccardi"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8">LinkedIn</HoverGrowText>
+            <HoverGrowText color="#FF00FF">LinkedIn</HoverGrowText>
           </a>
           <a
             className="App-link m-5"
@@ -36,7 +35,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8">Github</HoverGrowText>
+            <HoverGrowText color="#FF00FF">Github</HoverGrowText>
           </a>
           <a
             className="App-link m-5"
@@ -44,13 +43,13 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8">Instagram</HoverGrowText>
+            <HoverGrowText color="#FF00FF">Instagram</HoverGrowText>
           </a>
         </header>
       </HoverGrowDiv>
-      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
+      <HoverGrowDiv className="text-center bg-white p-4 mb-4">
         <div className="text-center mb-4">
-          <span id="projects" className="text-4xl font-extrabold font-mono">Projects</span>
+          <span id="projects" className="text-5xl font-extrabold font-extrabold italic">Projects</span>
         </div>
         <HoverGrowDiv>
           <a
@@ -59,7 +58,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8"><p className='font-bold text-3xl'>genarrate.net</p></HoverGrowText>
+            <HoverGrowText color="#FF00FF"><p className='font-bold text-3xl'>genarrate.net</p></HoverGrowText>
           </a>
           <div className="m-5">AI powered web app that helps medical professionals write narratives for their reports</div>
         </HoverGrowDiv>
@@ -70,25 +69,20 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <HoverGrowText color="#a81cb8"><p className='font-bold text-3xl'>retireonti.me</p></HoverGrowText>
+            <HoverGrowText color="#FF00FF"><p className='font-bold text-3xl'>retireonti.me</p></HoverGrowText>
           </a>
           <div className="m-5">Simple web app that lets you know if you're on track to retire based on contributions to retirement accounts</div>
         </HoverGrowDiv>
       </HoverGrowDiv>
 
-      <HoverGrowDiv className="text-center bg-blue-50 p-4 mb-4">
+      <HoverGrowDiv className="text-center bg-white p-4 mb-4">
         <div className="text-center mb-4">
-          <span id="contact" className="text-4xl font-extrabold font-mono">Support</span>
+          <span id="contact" className="text-5xl font-extrabold font-extrabold italic">Support</span>
         </div>
         <div className="m-5">If for whatever reason you would like to support me financially, here is my etheruem wallet address.</div>
-        <div className="m-5 font-light text-base italic">click the address to copy!</div>
-        <HoverGrowText color="#a81cb8">
-          <CopyToClipboardText>
-            <div className="m-5 font-mono text-xs sm:text-xl font-bold selectable">
-              0xacBfD0DC48D3392cD2680a253521f77E2b280F87
-            </div>
-          </CopyToClipboardText>
-        </HoverGrowText>
+          <div className="m-5 font-extrabold italic text-xs sm:text-xl font-bold selectable retro">
+            0x6F64C7a5fB2d15A3EbcB54831c7A751146947F48
+          </div>
       </HoverGrowDiv>
     </div>
   );
